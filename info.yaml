@@ -41,17 +41,17 @@ documentation:
     - none
     - none
     - allow shunting
-    - VORSICHT
+    - Vorsicht!
     - shorter breaking distance
 # A description of what the outputs do
   outputs:
-    - Fahrt
-    - HaltErwarten
-    - Halt
-    - Vorsicht
-    - pre_sig_indicator
-    - lower_shunting_indicator
-    - shorter_breaking_distance
+    - Fahrt!
+    - Halt Erwarten!
+    - Halt!
+    - Vorsicht!
+    - pre signal indicator
+    - lower shunting indicator
+    - shorter breaking distance
     - none
 
 # The following fields are optional
