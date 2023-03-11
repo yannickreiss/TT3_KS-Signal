@@ -1,7 +1,7 @@
 --- 
 # TinyTapeout project information
 project:
-  wokwi_id:    0        # If using wokwi, set this to your project's ID
+  wokwi_id:    357106633951414273        # If using wokwi, set this to your project's ID
 
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
 # Source files must be in ./src and you must list each source file separately
@@ -18,44 +18,46 @@ yaml_version: 3.0
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       ""      # Your name
-  title:        ""      # Project title
+  author:       "Yannick Reiß"      # Your name
+  title:        "KS-Signal"      # Project title
   language:     "Wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  ""      # Short description of what your project does
+  description:  "Set KS-Signal based on track information."      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      Explain how your project works
+      Simply switches lamps on and off on toggle.
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      Explain how to test your project
+      Just play around with the buttons on the left and watch the LEDs changing.
 
 # A description of what the inputs do
   inputs:               
     - clock
     - reset
+    - track1_free
+    - track2_free
+    - pre_signal
     - none
     - none
-    - none
-    - none
-    - none
-    - none
+    - allow shunting
+    - VORSICHT
+    - shorter breaking distance
 # A description of what the outputs do
   outputs:
-    - segment a
-    - segment b
-    - segment c
-    - segment d
-    - segment e
-    - segment f
-    - segment g
-    - dot
+    - Fahrt
+    - HaltErwarten
+    - Halt
+    - Vorsicht
+    - pre_sig_indicator
+    - lower_shunting_indicator
+    - shorter_breaking_distance
+    - none
 
 # The following fields are optional
   tag:          ""      # comma separated list of tags: test encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
-  external_hw:  ""      # Describe any external hardware needed
-  discord:      ""      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
+  external_hw:  "Clock, 9 Buttons, 3 yellow LEDs, 3 white LEDs, 1 green LED, 1 red LED, 1 orange LED"      # Describe any external hardware needed
+  discord:      "YNick#7375"      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
-  clock_hz:     0       # Clock frequency in Hz (if required)
+  clock_hz:     10000       # Clock frequency in Hz (if required)
   picture:      ""      # relative path to a picture in your repository
